@@ -1,0 +1,61 @@
+:root{
+  --bg:#ffffff;
+  --text:#0b1a2b;
+  --muted:#6b7280;
+  --accent:#0b63b8; /* blue */
+  --accent-2:#c59d1a; /* gold */
+  --maxw:1100px;
+  --radius:10px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:var(--maxw);margin:0 auto;padding:28px}
+
+.site-header{border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:40}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.brand-name{font-weight:700}
+.brand-sub{font-size:13px;color:var(--muted)}
+
+.nav{display:flex;gap:18px}
+.nav a{text-decoration:none;color:var(--muted);font-weight:600}
+.nav-toggle{display:none;border:0;background:transparent;font-size:20px}
+
+.hero{padding:48px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center}
+.hero-text h1{font-size:34px;margin:0 0 10px}
+.lead{color:var(--muted);margin-bottom:16px}
+.accent{color:var(--accent-2)}
+.cta-row{display:flex;gap:12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff;border:0}
+.btn.outline{background:transparent;border:2px solid #ddd;color:var(--text)}
+.btn.small{padding:8px 10px;font-size:14px}
+
+.card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(12,24,40,0.06)}
+.grid-3 {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:16px;
+  margin-top:16px;
+}
+.journey .timeline{margin-top:10px}
+.tl-item{background:#fbfbfd;padding:12px;border-radius:8px;margin-bottom:8px;border:1px solid #f0f0f5}
+
+.contact-form{max-width:700px;margin-top:12px;display:grid;gap:10px}
+.contact-form label{display:block;font-weight:600;color:var(--muted)}
+.contact-form input, .contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd}
+.form-actions{display:flex;gap:12px;margin-top:6px}
+
+.site-footer{border-top:1px solid #eee;padding:18px 0;margin-top:32px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.socials a{margin-left:8px;text-decoration:none;color:var(--muted);font-weight:600}
+
+/* responsiveness */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .nav{display:none}
+  .nav-toggle{display:block}
+}

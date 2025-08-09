@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Abhishek Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-name">Abhishek Singh</div>
+        <div class="brand-sub">AIR 78 — UPSC CSE</div>
+      </a>
+      <nav class="nav"><a href="index.html">Home</a><a href="blog.html">Blog</a><a href="#contact">Contact</a></nav>
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-me">
+      <h1>About Me</h1>
+      <p>I am from Jaunpur, Uttar Pradesh. I studied Civil Engineering at IIT Hyderabad and chose Anthropology as my optional. I love Vipassana meditation, tutoring and mental health counselling. earlier the optional was anthropology</p>
+
+      <h3>Education</h3>
+      <ul>
+        <li>IIT Hyderabad — B.Tech (Civil)</li>
+        <li>Schooling: Kamla Nehru Institute (CBSE)</li>
+      </ul>
+
+      <h3>Achievements & Experience</h3>
+      <ul>
+        <li>AIR 78 — UPSC CSE</li>
+        <li>Merit-cum-means scholarship, Sakura Science Scholarship (Tokyo)</li>
+      </ul>
+
+      <h3>Why this site?</h3>
+      <p>I created this site to share notes, strategies, and honest guidance for UPSC aspirants.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Abhishek Singh</div>
+      <div><a href="index.html">Home</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>
